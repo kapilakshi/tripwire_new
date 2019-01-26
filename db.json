@@ -1,0 +1,64 @@
+{
+  "posts":[
+    {
+      "Title": "TE: Port Requirements for Tripwire Enterprise",
+        "_id": "a0f189f451ea30dd7551211ff93c297f",
+        "_score": 1.3210323,
+        "_source.file.filename": "TE__Port_Requirements_for_Tripwire_Enterprise.txt",
+        "doc_type": "_doc",
+        "highlight_content": ["Port Requirements for Tripwire Enterprise  This article applies to all <em>supported</em> versions of the Tripwire Enterprise Console  This article identifies the"],
+        "issue_article": "kA0U0000000TYM4KAO_en_US_1.html",
+        "resolution_article": "kA0U0000000TYM4KAO_en_US_2.html"
+      },
+      {
+        "Title": "TE: Port Requirements for Tripwire Enterprise",
+          "_id": "a0f189f451ea30dd7551211ff93c297f",
+          "_score": 1.3210323,
+          "_source.file.filename": "TE__Port_Requirements_for_Tripwire_Enterprise.txt",
+          "doc_type": "_doc",
+          "highlight_content": ["Port Requirements for Tripwire Enterprise  This article applies to all <em>supported</em> versions of the Tripwire Enterprise Console  This article identifies the"],
+          "issue_article": "kA0U0000000TYM4KAO_en_US_1.html",
+          "resolution_article": "kA0U0000000TYM4KAO_en_US_2.html"
+        },
+        {
+          "Title": "TE: Port Requirements for Tripwire Enterprise",
+            "_id": "a0f189f451ea30dd7551211ff93c297f",
+            "_score": 1.3210323,
+            "_source.file.filename": "TE__Port_Requirements_for_Tripwire_Enterprise.txt",
+            "doc_type": "_doc",
+            "highlight_content": ["Port Requirements for Tripwire Enterprise  This article applies to all <em>supported</em> versions of the Tripwire Enterprise Console  This article identifies the"],
+            "issue_article": "kA0U0000000TYM4KAO_en_US_1.html",
+            "resolution_article": "kA0U0000000TYM4KAO_en_US_2.html"
+          },
+          {
+            "Title": "TE: Port Requirements for Tripwire Enterprise",
+              "_id": "a0f189f451ea30dd7551211ff93c297f",
+              "_score": 1.3210323,
+              "_source.file.filename": "TE__Port_Requirements_for_Tripwire_Enterprise.txt",
+              "doc_type": "_doc",
+              "highlight_content": ["Port Requirements for Tripwire Enterprise  This article applies to all <em>supported</em> versions of the Tripwire Enterprise Console  This article identifies the"],
+              "issue_article": "kA0U0000000TYM4KAO_en_US_1.html",
+              "resolution_article": "kA0U0000000TYM4KAO_en_US_2.html"
+            },
+            {
+              "Title": "TE: Port Requirements for Tripwire Enterprise",
+                "_id": "a0f189f451ea30dd7551211ff93c297f",
+                "_score": 1.3210323,
+                "_source.file.filename": "TE__Port_Requirements_for_Tripwire_Enterprise.txt",
+                "doc_type": "_doc",
+                "highlight_content": ["Port Requirements for Tripwire Enterprise  This article applies to all <em>supported</em> versions of the Tripwire Enterprise Console  This article identifies the"],
+                "issue_article": "kA0U0000000TYM4KAO_en_US_1.html",
+                "resolution_article": "kA0U0000000TYM4KAO_en_US_2.html"
+              }
+        ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

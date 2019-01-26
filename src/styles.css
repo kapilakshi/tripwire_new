@@ -1,0 +1,5 @@
+body .ui-radiobutton .ui-radiobutton-box.ui-state-active {
+    border-color: #007ad9;
+    background-color:white;
+    color: #ffffff;
+  }
