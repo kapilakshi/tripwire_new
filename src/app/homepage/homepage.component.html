@@ -30,19 +30,7 @@
                    </div>
                 </ng-container>
             </ng-template>
- <!-- <ng-template pTemplate="listItem" let-i="rowIndex">
-            <ng-container >
-                {{dv.result}}
-       <div class="datatable" id="tab"  >
-            <p class="text">Title : {{fileJson[comparedMatrix[i][1]].Title}}</p>
-            <p  class="text" ><a href="{{textfilepath}}{{fileJson[comparedMatrix[i][1]].issue_article | slice:4}}" target="_blank" >{{fileJson[comparedMatrix[i][1]].issue_article | slice:5}}</a><br/><a href="{{textfilepath}}{{fileJson[comparedMatrix[i][1]].resolution_article | slice:4}}" target="_blank" >{{fileJson[comparedMatrix[0][1]].resolution_article | slice:5}}</a></p>
-            <br/>
-            <div  class="ui-g-12">
-            <div class="ui-g-3"><span class="score">Score:</span><span class="scoreinfo">{{queryJson.hits.hits[comparedMatrix[i][0]]._score}}</span></div> <div  class="ui-g-7"  ><p  class="info"  [innerHTML]="queryJson.hits.hits[comparedMatrix[i][0]].highlight.content" ></p></div><div class="ui-g-2"><span><p-radioButton class="radio" (onClick)="checkedData(i,fileJson[comparedMatrix[i][1]].Title,queryJson.hits.hits[comparedMatrix[i][0]].highlight.content)" [(ngModel)]="selectedValue" ></p-radioButton><p-button  (click)="displayData(fileJson[comparedMatrix[i][1]].Title,queryJson.hits.hits[comparedMatrix[i][0]].highlight.content,i)" label="Submit Feedback" class="ui-button-rounded"></p-button></span></div></div><hr>
-       </div>
-    </ng-container>
-   </ng-template>-->
- 
+
    </p-dataView>
 </div>
 </div>

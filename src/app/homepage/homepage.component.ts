@@ -12,38 +12,27 @@ export class HomepageComponent implements OnInit {
   
   public searchText : string;
   nameinput:string;
-  searchTerm: string;
   name:any;
-  selectedValue:string;
-  public queryJson:any;
-  public fileJson:any;
-  public comparedMatrix=[];
   isChecked:boolean=false;
   titleof;
   contentof;
-  amountChecked=0;
-  amountchecked=0;
-  lastAction;
   public result:any;
   public feedback:any;
-  found:boolean;
   url:string;
-  textfilepath = environment.textfilepath;
+  feedbackUrl;
   baseUrl = environment.baseUrl;
   path = environment.path;
+  fUrl = environment.feedbackUrl;
  
   constructor( private _getData : GetDataService, private http : HttpClient ,private elRef: ElementRef, private renderer: Renderer2) {
     
    }
   updateSearch(e:any) {
-    this.comparedMatrix=[];
     this.url = this.baseUrl ;
+    this.feedbackUrl= this.fUrl;
    this.name = e.target.value;
-   this.searchTerm = e.target.value;
-   this.http.get("http://10.11.198.208:5001/tripwire/query/?query="+ this.name)
+   this.http.get(this.url + this.name)
   .subscribe(res => {this.result  = res; console.log('get request',this.result)});
-   
-  
   }
 
  
@@ -59,7 +48,7 @@ export class HomepageComponent implements OnInit {
   {
     if(title==this.titleof)
     {
-      this.http.post("http://10.11.198.208:5001/tripwire/feedback/",{"_id": id,
+      this.http.post(this.feedbackUrl,{"_id": id,
       "doc_type": "_doc","query_string": this.name})
       .subscribe(res => {this.feedback  = res; console.log('post request',this.feedback)});
      console.log(id);

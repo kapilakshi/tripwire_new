@@ -1,7 +1,6 @@
 export const environment = {
   production: true,
-  baseUrl : 'http://172.16.0.250:9200/my_index/_doc/_search?pretty',
+  baseUrl : 'http://10.11.198.208:5001/tripwire/query/?query=',
   path: '/tripwire_new/',
-  jsonurl: '/tripwire_ui/assets/data/csvjson.json',
-  textfilepath: '/assets/htmls/'
+  feedbackUrl: 'http://10.11.198.208:5001/tripwire/feedback/'
 };
