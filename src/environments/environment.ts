@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl : 'http://10.11.198.208:5001/tripwire/query/?query=support%20bundle',
+  baseUrl : 'http://localhost:3004/posts',
   path: '/',
   jsonurl: '/assets/data/links.json',
   textfilepath: '/assets/pdf/'

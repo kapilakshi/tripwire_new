@@ -57,15 +57,13 @@ export class HomepageComponent implements OnInit {
  
   displayData(title,content,i,id)
   {
-    console.log(this.name);
     if(title==this.titleof)
     {
       this.http.post("http://10.11.198.208:5001/tripwire/feedback/",{"_id": id,
       "doc_type": "_doc","query_string": this.name})
       .subscribe(res => {this.feedback  = res; console.log('post request',this.feedback)});
-     console.log(title);
-     console.log(content);
      console.log(id);
+     console.log(this.name);
       
     }
     else
@@ -79,11 +77,7 @@ export class HomepageComponent implements OnInit {
  
   
 ngOnInit() {
-   
- /*this.http.post("http://10.11.198.208:5001/tripwire/query/?query=support%20bundle",{})
-  .subscribe(res => {this.result  = res; console.log('get request',this.result)});*/
-  /*this.http.get("http://10.11.198.208:5001/tripwire/query/?query="+ this.name)
-  .subscribe(res => {this.result  = res; console.log('get request',this.result)});*/
+  
   }
   
 
