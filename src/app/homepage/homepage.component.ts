@@ -1,5 +1,4 @@
 import { Component, OnInit, Renderer2,ElementRef ,ViewChild } from '@angular/core';
-import { GetDataService } from '../get-data.service';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
@@ -10,21 +9,18 @@ import { environment } from '../../environments/environment';
 })
 export class HomepageComponent implements OnInit {
   
-  public searchText : string;
-  nameinput:string;
-  name:any;
-  isChecked:boolean=false;
-  titleof;
-  contentof;
+  public name:any;
+  public titleof:any;
+  public contentof:any;
   public result:any;
   public feedback:any;
-  url:string;
-  feedbackUrl;
+  public url:string;
+  public feedbackUrl :any;
   baseUrl = environment.baseUrl;
   path = environment.path;
   fUrl = environment.feedbackUrl;
  
-  constructor( private _getData : GetDataService, private http : HttpClient ,private elRef: ElementRef, private renderer: Renderer2) {
+  constructor(private http : HttpClient) {
     
    }
   updateSearch(e:any) {
@@ -34,8 +30,6 @@ export class HomepageComponent implements OnInit {
    this.http.get(this.url + this.name)
   .subscribe(res => {this.result  = res; console.log('get request',this.result)});
   }
-
- 
  checkedData(i,title,content)
  {
   
@@ -43,8 +37,7 @@ export class HomepageComponent implements OnInit {
    this.contentof=content;
   
  }
- 
-  displayData(title,content,i,id)
+ displayData(title,content,i,id)
   {
     if(title==this.titleof)
     {

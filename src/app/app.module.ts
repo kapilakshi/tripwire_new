@@ -5,13 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { SearchPipe } from './search.pipe';
-
-import { HighlightPipe } from './highlight.pipe';
+import { FormsModule} from '@angular/forms';
 import {APP_BASE_HREF} from '@angular/common';
 import { environment } from '../environments/environment';
-import {CheckboxModule} from 'primeng/checkbox';
 import {ButtonModule} from 'primeng/button';
 import {RadioButtonModule} from 'primeng/radiobutton';
 
@@ -19,9 +15,7 @@ import {RadioButtonModule} from 'primeng/radiobutton';
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    SearchPipe,
-    HighlightPipe
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,8 +23,7 @@ import {RadioButtonModule} from 'primeng/radiobutton';
     HttpClientModule,
     FormsModule,
     DataViewModule,
-    CheckboxModule,
-    ButtonModule,ReactiveFormsModule,
+    ButtonModule,
     RadioButtonModule
    
     
