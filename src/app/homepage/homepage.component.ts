@@ -19,6 +19,7 @@ export class HomepageComponent implements OnInit {
   baseUrl = environment.baseUrl;
   path = environment.path;
   fUrl = environment.feedbackUrl;
+  fileUrl = environment.fileUrl;
  
   constructor(private http : HttpClient) {
     
