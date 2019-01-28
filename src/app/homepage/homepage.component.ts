@@ -16,6 +16,8 @@ export class HomepageComponent implements OnInit {
   public feedback:any;
   public url:string;
   public feedbackUrl :any;
+  alertStyles;
+  public colorofbutton:string;
   baseUrl = environment.baseUrl;
   path = environment.path;
   fUrl = environment.feedbackUrl;
@@ -29,7 +31,7 @@ export class HomepageComponent implements OnInit {
     this.feedbackUrl= this.fUrl;
    this.name = e.target.value;
    this.http.get(this.url + this.name)
-  .subscribe(res => {this.result  = res; console.log('get request',this.result)});
+  .subscribe(res => {this.result  = res; });
   }
  checkedData(i,title,content)
  {
@@ -43,11 +45,19 @@ export class HomepageComponent implements OnInit {
     if(title==this.titleof)
     {
       this.http.post(this.feedbackUrl,{"_id": id,
-      "doc_type": "_doc","query_string": this.name})
-      .subscribe(res => {this.feedback  = res; console.log('post request',this.feedback)});
-     console.log(id);
-     console.log(this.name);
+      "doc_type": "_doc","query_string": this.name}) // need to send doc_type dynamically
+      .subscribe(res => {this.feedback  = res['result']; 
+      console.log('post request',this.feedback);
+      if(this.feedback == true)
+      {
+       this.colorofbutton= "Feedback Incorporated Successfully !";
+      }
+      else{
+        this.colorofbutton= "Sorry feedback cannot be Incorporated !";
+      }
+    });
       
+ 
     }
     else
     {
