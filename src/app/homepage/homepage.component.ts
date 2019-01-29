@@ -27,6 +27,7 @@ export class HomepageComponent implements OnInit {
     
    }
   updateSearch(e:any) {
+    this.result = null;
     this.url = this.baseUrl ;
     this.feedbackUrl= this.fUrl;
    this.name = e.target.value;
@@ -50,10 +51,15 @@ export class HomepageComponent implements OnInit {
       console.log('post request',this.feedback);
       if(this.feedback == true)
       {
-       this.colorofbutton= "Feedback Incorporated Successfully !";
+            this.colorofbutton= "Feedback Incorporated Successfully !";
+           
+          
       }
       else{
-        this.colorofbutton= "Sorry feedback cannot be Incorporated !";
+      
+          this.colorofbutton= "Sorry feedback cannot be Incorporated !";
+         
+        
       }
     });
       

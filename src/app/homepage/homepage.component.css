@@ -155,7 +155,7 @@ hr{
 .popup {
   margin: 70px auto;
   padding: 20px;
-  background: #fff;
+  background: #bababa;
   border-radius: 5px;
   width: 25%;
   position: relative;
@@ -178,7 +178,7 @@ hr{
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+    color:#F79646;
 }
 .popup .content {
   max-height: 30%;
@@ -195,10 +195,17 @@ hr{
 }h2 {
     text-align: center;
     font-family: Tahoma, Arial, sans-serif;
-    color: #06D85F;
-    margin: 20px 0;
+    color:#F16136;
+  
   }
   h3{
     text-align: left;
     color: green;
   }
+  .modal-header {
+    padding: 20px;
+    margin-top: 0px;
+    background: #546E7A;
+    color: #ffffff;
+  }
+  

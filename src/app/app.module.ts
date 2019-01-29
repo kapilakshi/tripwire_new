@@ -10,6 +10,8 @@ import {APP_BASE_HREF} from '@angular/common';
 import { environment } from '../environments/environment';
 import {ButtonModule} from 'primeng/button';
 import {RadioButtonModule} from 'primeng/radiobutton';
+import {DialogModule} from 'primeng/dialog';
+
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import {RadioButtonModule} from 'primeng/radiobutton';
     FormsModule,
     DataViewModule,
     ButtonModule,
-    RadioButtonModule
+    RadioButtonModule,
+    DialogModule
+    
    
     
   ],
