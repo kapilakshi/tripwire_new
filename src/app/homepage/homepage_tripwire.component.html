@@ -9,9 +9,9 @@
                       
                     <div class="ui-g">
                        
-                            <div class="ui-g-12 filter-container" style="position:relative"><div class="ui-g-3"><img src="{{path}}assets/images/tripwire2.png" height="80px" width="300px"/></div>
+                            <div class="ui-g-12 filter-container" style="position:relative"><div class="ui-g-3"><img src="{{path}}assets/images/tripwire2.png" height="120px" width="300px"/></div>
                                 <div class="ui-g-9">
-                               <div class="pi pi-search searchbox ui-g-9"> <input class="inputsearchbox" type="search" value="support bundle" pInputText placeholder="Search.." (keydown.enter)="updateSearch($event)"></div>
+                               <div class="pi pi-search searchbox ui-g-9"> <input class="inputsearchbox" type="search" value="" pInputText placeholder="Search.." (keydown.enter)="updateSearch($event)"></div>
                             </div>
                             </div>
                         
@@ -29,7 +29,7 @@
                         <div  class="ui-g-12">
                         <div class="ui-g-3"><span class="score">Score:</span><span class="scoreinfo">{{x._score}}</span></div> <div  class="ui-g-7"  ><p  class="info"  [innerHTML]="x.highlight_content" ></p></div><div class="ui-g-2"><span><p-radioButton class="radio" (onClick)="checkedData(i,x.Title,x.highlight_content)" [(ngModel)]="selectedValue" [ngStyle]="alertStyles "></p-radioButton><a class="button" href="#popup1"><p-button  (click)="displayData(x.Title,x.highlight_content,i,x._id)" label="Submit Feedback" class="ui-button-rounded" ></p-button></a></span></div></div><hr>
                    </div>
-                  <div  id="popup1" class="overlay">
+                <div  id="popup1" class="overlay">
                        
                     <div class="popup">
                             <div>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-               
+             
                 </ng-container>
             </ng-template>
 

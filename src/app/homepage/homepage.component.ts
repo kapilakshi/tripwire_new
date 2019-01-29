@@ -22,6 +22,7 @@ export class HomepageComponent implements OnInit {
   path = environment.path;
   fUrl = environment.feedbackUrl;
   fileUrl = environment.fileUrl;
+  display: boolean = false;
  
   constructor(private http : HttpClient) {
     
@@ -58,7 +59,7 @@ export class HomepageComponent implements OnInit {
       else{
       
           this.colorofbutton= "Sorry feedback cannot be Incorporated !";
-         
+        
         
       }
     });
