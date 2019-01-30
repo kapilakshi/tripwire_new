@@ -108,7 +108,8 @@ hr{
 }
 .filter-container
 {
-    margin-right:5px;
+    margin:0px;
+    padding:0px;
 }
 .searchbox
 {
