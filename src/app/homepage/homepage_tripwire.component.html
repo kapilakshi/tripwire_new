@@ -9,7 +9,7 @@
                       
                     <div class="ui-g">
                        
-                            <div class="ui-g-12 filter-container" style="position:relative"><div class="ui-g-3"><img src="{{path}}assets/images/tripwire2.png" height="120px" width="300px"/></div>
+                            <div class="ui-g-12 filter-container" style="position:relative"><div class="ui-g-3"><img src="{{path}}assets/images/tripwire2.png" height="120px" width="280px"/></div>
                                 <div class="ui-g-9">
                                <div class="pi pi-search searchbox ui-g-9"> <input class="inputsearchbox" type="search" value="" pInputText placeholder="Search.." (keydown.enter)="updateSearch($event)"></div>
                             </div>
@@ -27,22 +27,10 @@
                         <p  class="text" ><a href="{{fileUrl}}{{x.issue_article}}" target="_blank" >{{x.issue_article | slice:0:-5}}</a><br/><a href="{{fileUrl}}{{x.resolution_article}}" target="_blank" >{{x.resolution_article | slice:0:-5}}</a></p>
                         <br/>
                         <div  class="ui-g-12">
-                        <div class="ui-g-3"><span class="score">Score:</span><span class="scoreinfo">{{x._score}}</span></div> <div  class="ui-g-7"  ><p  class="info"  [innerHTML]="x.highlight_content" ></p></div><div class="ui-g-2"><span><p-radioButton class="radio" (onClick)="checkedData(i,x.Title,x.highlight_content)" [(ngModel)]="selectedValue" [ngStyle]="alertStyles "></p-radioButton><a class="button" href="#popup1"><p-button  (click)="displayData(x.Title,x.highlight_content,i,x._id)" label="Submit Feedback" class="ui-button-rounded" ></p-button></a></span></div></div><hr>
+                        <div class="ui-g-3"><span class="score">Score:</span><span class="scoreinfo">{{x._score}}</span></div> <div  class="ui-g-7"  ><p  class="info"  [innerHTML]="x.highlight_content" ></p></div><div class="ui-g-2"><span><p-radioButton class="radio" (onClick)="checkedData(i,x.Title,x.highlight_content)"  ></p-radioButton><p-button  (click)="displayData(x.Title,x.highlight_content,i,x._id)" label="Submit Feedback" class="ui-button-rounded" ></p-button></span></div></div><hr>
                    </div>
-                <div  id="popup1" class="overlay">
-                       
-                    <div class="popup">
-                            <div>
-                                  <h2>Message</h2>  
-                            </div>
-                       
-                            <a class="close" href="#">&times;</a>
-                        <div class="content">
-                          <h3> {{colorofbutton}} </h3>
-                        </div>
-                    </div>
-                </div>
-             
+
+        <p-toast position="center" [style]="{textAlign:'center'}"></p-toast>
                 </ng-container>
             </ng-template>
 

@@ -11,6 +11,9 @@ import { environment } from '../environments/environment';
 import {ButtonModule} from 'primeng/button';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {DialogModule} from 'primeng/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToastModule} from 'primeng/toast';
+
 
 
 
@@ -20,6 +23,7 @@ import {DialogModule} from 'primeng/dialog';
     HomepageComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -27,7 +31,8 @@ import {DialogModule} from 'primeng/dialog';
     DataViewModule,
     ButtonModule,
     RadioButtonModule,
-    DialogModule
+    DialogModule,
+    ToastModule
     
    
     
