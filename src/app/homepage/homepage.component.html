@@ -24,7 +24,7 @@
                     <ng-container >
                    <div class="datatable" id="tab"  >
                         <p class="text">Title : {{x.Title}}</p>
-                        <p  class="text" ><a href="{{fileUrl}}{{x.issue_article}}" target="_blank" >{{x.issue_article | slice:0:-5}}</a><br/><a href="{{fileUrl}}{{x.resolution_article}}" target="_blank" >{{x.resolution_article | slice:0:-5}}</a></p>
+                        <p  class="text" ><a href="{{fileUrl}}{{x.issue_article}}" target="_blank" >{{x.issue_article}}</a><br/><a href="{{fileUrl}}{{x.resolution_article}}" target="_blank" >{{x.resolution_article}}</a></p>
                         <br/>
                         <div  class="ui-g-12">
                         <div class="ui-g-3"><span class="score">Score:</span><span class="scoreinfo">{{x._score}}</span></div> <div  class="ui-g-7"  ><p  class="info"  [innerHTML]="x.highlight_content" ></p></div><div class="ui-g-2"><span><p-radioButton class="radio" (onClick)="checkedData(i,x.Title,x.highlight_content)"  ></p-radioButton><p-button  (click)="displayData(x.Title,x.highlight_content,i,x._id)" label="Submit Feedback" class="ui-button-rounded" ></p-button></span></div></div><hr>
