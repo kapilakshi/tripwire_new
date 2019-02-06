@@ -3,7 +3,7 @@
 <body>  
     <div class="ui-g">
             <div class="ui-g-12 ui-md-12">
- <p-dataView #dv [value]="result"  [paginator]="true" paginatorPosition="both" [rows]="20" >
+ <p-dataView #dv [value]="result"  [paginator]="true" paginatorPosition="both" [rows]="20" [first]="kam" (onPage)="lok($event)">
         <p-header>
                 <div class="ui-helper-clearfix">
                       
@@ -35,6 +35,9 @@
             </ng-template>
 
    </p-dataView>
+
+
+
 </div>
 </div>
 </body></html>

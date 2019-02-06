@@ -3,20 +3,17 @@
 <body>  
     <div class="ui-g">
             <div class="ui-g-12 ui-md-12">
- <p-dataView #dv [value]="result"   >
-    <p-paginator rows="20"  paginatorPosition="both" >
-    <p-header>
+ <p-dataView #dv [value]="result"  [paginator]="true" paginatorPosition="both" [rows]="20" [first]="kam" (onPage)="lok($event)">
+        <p-header>
                 <div class="ui-helper-clearfix">
                       
                     <div class="ui-g">
-                       
-                            <div class="ui-g-12 filter-container" style="position:relative"><div class="ui-g-2"><img src="{{path}}assets/images/interpret.png" height="50px" width="200px"/></div>
-                                <div class="ui-g-8">
-                               <div class="pi pi-search searchbox ui-g-8"> <input class="inputsearchbox" type="search" value="" pInputText placeholder="Search.." (keydown.enter)="updateSearch($event)"></div>
-                            </div>
-                            <div class="ui-g-2"><img src="{{path}}assets/images/smart.png" height="50px" width="170px"/></div>
-                            </div>
-                        
+                        <div class="ui-g-12 filter-container" style="position:relative"><div class="ui-g-2"><img src="{{path}}assets/images/interpret.png" height="50px" width="200px"/></div>
+                        <div class="ui-g-8">
+                       <div class="pi pi-search searchbox ui-g-8"> <input class="inputsearchbox" type="search" value="" pInputText placeholder="Search.." (keydown.enter)="updateSearch($event)"></div>
+                    </div>
+                    <div class="ui-g-2"><img src="{{path}}assets/images/smart.png" height="50px" width="170px"/></div>
+                    </div>
                             
                     </div>
                 </div>
@@ -35,8 +32,11 @@
         <p-toast position="center" [style]="{textAlign:'center'}"></p-toast>
                 </ng-container>
             </ng-template>
-</p-paginator>
+
    </p-dataView>
+
+
+
 </div>
 </div>
 </body></html>

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import {MessageService} from 'primeng/api';
 
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -24,19 +25,35 @@ export class HomepageComponent implements OnInit {
   fUrl = environment.feedbackUrl;
   fileUrl = environment.fileUrl;
   display: boolean = false;
+  first;
+  public kam: number=0;
+
  
  
   constructor(private http : HttpClient,private messageService: MessageService) {
     
    }
-  updateSearch(e:any) {
-    this.result = null;
+
+   lok(eventData)
+   {
+    this.kam=eventData.first;
+    console.log(eventData.first);
+
+   }
+  updateSearch($event) {
+  
+ 
     this.url = this.baseUrl ;
     this.feedbackUrl= this.fUrl;
-   this.name = e.target.value;
+   this.name = $event.target.value;
    this.http.get(this.url + this.name)
-  .subscribe(res => {this.result  = res; });
+  .subscribe(res => {
+    this.kam = 0;
+    this.result = res
+  });
+  
   }
+ 
  checkedData(i,title,content)
  {
   
@@ -81,8 +98,8 @@ export class HomepageComponent implements OnInit {
  
   
 ngOnInit() {
-  
+ 
   }
   
-
+ 
 }
