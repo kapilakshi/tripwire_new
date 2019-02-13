@@ -7,7 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule} from '@angular/forms';
 import {APP_BASE_HREF} from '@angular/common';
-import { environment } from '../environments/environment';
+import { environment } from 'environments/environment';
 import {ButtonModule} from 'primeng/button';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {DialogModule} from 'primeng/dialog';

@@ -1,6 +1,6 @@
 import { Component, OnInit, Renderer2,ElementRef ,ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../environments/environment';
+import { environment } from 'environments/environment';
 import {MessageService} from 'primeng/api';
 
 
@@ -49,7 +49,8 @@ export class HomepageComponent implements OnInit {
    this.http.get(this.url + this.name)
   .subscribe(res => {
     this.kam = 0;
-    this.result = res
+    this.result = res;
+    console.log(this.result);
   });
   
   }
