@@ -42,7 +42,7 @@ export class HomepageComponent implements OnInit {
    }
   updateSearch($event) {
   
- 
+    this.result=[];
     this.url = this.baseUrl ;
     this.feedbackUrl= this.fUrl;
    this.name = $event.target.value;
